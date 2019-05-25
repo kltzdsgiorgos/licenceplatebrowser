@@ -142,6 +142,7 @@ django_heroku.settings(locals())
 
 # Pagination for the REST API
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_PAGINATION_CLASS': 'plates.pagination.PageNumberPagination',
     'PAGE_SIZE': 10000
 }
